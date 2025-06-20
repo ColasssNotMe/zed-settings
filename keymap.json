@@ -14,7 +14,7 @@
       "ctrl-shift-b": "project_panel::ToggleFocus",
       // "shift-alt-b": "workspace::ToggleLeftDock",
       // "ctrl-alt-b": "agent::ToggleFocus",
-      "ctrl-alt-b": "workspace::ToggleLeftDock",
+      "ctrl-alt-b": "agent::ToggleFocus",
       "alt-l": "workspace::ToggleBottomDock",
       "alt-u": "file_finder::Toggle",
       "alt-p": "command_palette::Toggle"
