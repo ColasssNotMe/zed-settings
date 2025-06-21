@@ -7,6 +7,10 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "terminal": {
+    "font_family": "CaskaydiaCove Nerd Font",
+    "shell": { "program": "C:\\Program Files\\PowerShell\\7\\pwsh.exe" }
+  },
   "icon_theme": "Catppuccin Latte",
   "autosave": {
     "after_delay": {
