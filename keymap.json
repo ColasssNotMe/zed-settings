@@ -17,7 +17,26 @@
       "ctrl-alt-b": "agent::ToggleFocus",
       "alt-l": "workspace::ToggleBottomDock",
       "alt-u": "file_finder::Toggle",
-      "alt-p": "command_palette::Toggle"
+      "alt-p": "command_palette::Toggle",
+      
+      "alt-1": ["workspace::ActivatePane", 0],
+      "alt-+": ["workspace::ActivatePane", 0],
+      "alt-2": ["workspace::ActivatePane", 1],
+      "alt-[": ["workspace::ActivatePane", 1],
+      "alt-3": ["workspace::ActivatePane", 2],
+      "alt-{": ["workspace::ActivatePane", 2],
+      "alt-4": ["workspace::ActivatePane", 3],
+      "alt-(": ["workspace::ActivatePane", 3],
+      "alt-5": ["workspace::ActivatePane", 4],
+      "alt-&": ["workspace::ActivatePane", 4],
+      "alt-6": ["workspace::ActivatePane", 5],
+      "alt-@": ["workspace::ActivatePane", 5],
+      "alt-7": ["workspace::ActivatePane", 6],
+      "alt-)": ["workspace::ActivatePane", 6],
+      "alt-8": ["workspace::ActivatePane", 7],
+      "alt-}": ["workspace::ActivatePane", 7],
+      "alt-9": ["workspace::ActivatePane", 8],
+      "alt-*": ["workspace::ActivatePane", 8],
     }
   },
   {
