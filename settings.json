@@ -32,9 +32,31 @@
   "project_panel": {
     "dock": "right"
   },
+  "soft_wrap": "editor_width",
   "agent": {
+    "profiles": {
+      "agent": {
+        "name": "Agent",
+        "tools": {
+          "fetch": true,
+          "thinking": true,
+          "terminal": false,
+          "read_file": true,
+          "open": true,
+          "now": true,
+          "list_directory": true,
+          "grep": true,
+          "find_path": true,
+          "copy_path": true,
+          "diagnostics": true,
+          "edit_file": true
+        },
+        "enable_all_context_servers": false,
+        "context_servers": {}
+      }
+    },
     "always_allow_tool_actions": true,
-    "default_profile": "write",
+    "default_profile": "agent",
     "dock": "right",
     "model_parameters": [],
     "default_model": {
@@ -49,7 +71,7 @@
   "theme": {
     "mode": "system",
     "light": "One Light",
-    "dark": "Ayu Dark"
+    "dark": "Vue Dark"
   },
   "diagnostics": {
     "button": true,
