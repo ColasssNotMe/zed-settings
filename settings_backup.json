@@ -10,6 +10,7 @@
   "show_edit_predictions": false,
   "terminal": {
     "font_family": "CaskaydiaCove Nerd Font"
+    // "shell": { "program": "C:\\Program Files\\PowerShell\\7\\pwsh.exe" }
   },
   "icon_theme": "Catppuccin Latte",
   "autosave": {
@@ -61,7 +62,8 @@
     "default_model": {
       "provider": "copilot_chat",
       "model": "gpt-4.1"
-    }
+    },
+    "version": "2"
   },
   "vim_mode": true,
   "ui_font_size": 16,
