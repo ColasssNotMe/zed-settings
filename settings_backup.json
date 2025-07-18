@@ -63,6 +63,7 @@
       "provider": "copilot_chat",
       "model": "gpt-4o"
     },
+    "version": "2"
   },
   "vim_mode": true,
   "ui_font_size": 16,
