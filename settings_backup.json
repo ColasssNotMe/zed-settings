@@ -9,8 +9,13 @@
 {
   "show_edit_predictions": false,
   "terminal": {
+<<<<<<< HEAD
     "font_family": "CaskaydiaCove Nerd Font",
     "shell": { "program": "C:\\Program Files\\PowerShell\\7\\pwsh.exe" }
+=======
+    "font_family": "CaskaydiaCove Nerd Font"
+    // "shell": { "program": "C:\\Program Files\\PowerShell\\7\\pwsh.exe" }
+>>>>>>> ada0ce15a2608554c73b7e98f3e9ae2a39c93728
   },
   "icon_theme": "Catppuccin Latte",
   "autosave": {
@@ -61,7 +66,11 @@
     "model_parameters": [],
     "default_model": {
       "provider": "copilot_chat",
+<<<<<<< HEAD
       "model": "gpt-4o"
+=======
+      "model": "gpt-4.1"
+>>>>>>> ada0ce15a2608554c73b7e98f3e9ae2a39c93728
     },
     "version": "2"
   },
