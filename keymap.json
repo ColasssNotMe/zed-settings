@@ -20,7 +20,7 @@
       "alt-p": "command_palette::Toggle",
 
       // close other tabs
-      "ctrl-'": "pane::CloseInactiveItems",
+      "ctrl-'": "pane::CloseOtherItems",
 
       "ctrl-1": ["workspace::ActivatePane", 0],
       "ctrl-+": ["workspace::ActivatePane", 0],
@@ -67,11 +67,30 @@
     }
   },
 
+  // nulled keybinds
   {
     "context": "vim_mode ==visual",
     "bindings": {
-      "shift-s": ["vim::PushAddSurrounds", {}]
+      "shift-s": "vim::PushAddSurrounds"
       // "j k": ["workspace::SendKeystrokes", "escape"]
+    }
+  },
+  {
+    "context": "vim_mode == literal",
+    "bindings": {
+      "ctrl-m": null
+    }
+  },
+  {
+    "context": "Editor || vim_mode==normal",
+    "bindings": {
+      "ctrl-m": "editor::MoveToEnclosingBracket"
+    }
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "ctrl-'": null
     }
   }
 ]
