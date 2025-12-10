@@ -20,8 +20,6 @@
       "alt-p": "command_palette::Toggle",
 
       // close other tabs
-      "ctrl-'": "pane::CloseOtherItems",
-
       "ctrl-1": ["workspace::ActivatePane", 0],
       "ctrl-+": ["workspace::ActivatePane", 0],
       "ctrl-2": ["workspace::ActivatePane", 1],
@@ -91,6 +89,12 @@
     "context": "Editor",
     "bindings": {
       "ctrl-'": null
+    }
+  },
+  {
+    "context": "Workspace || Editor",
+    "bindings": {
+      "ctrl-'": "pane::CloseOtherItems"
     }
   }
 ]
