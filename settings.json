@@ -7,7 +7,7 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
-  "buffer_font_family": "Ubuntu Sans Mono",
+  "buffer_font_family": "JetBrains Mono",
   "preferred_line_length": 75,
   "relative_line_numbers": "enabled",
   "show_edit_predictions": false,
