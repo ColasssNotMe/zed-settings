@@ -96,5 +96,28 @@
     "bindings": {
       "ctrl-'": "pane::CloseOtherItems"
     }
+  },
+  {
+    "context": "Workspace || Editor",
+    "bindings": {
+      "alt-left": [
+        "workspace::MoveItemToPaneInDirection",
+        {
+          "direction": "left"
+        }
+      ],
+      "alt-right": [
+        "workspace::MoveItemToPaneInDirection",
+        { "direction": "right" }
+      ],
+      "alt-up": [
+        "workspace::MoveItemToPaneInDirection",
+        { "direction": "up" }
+      ],
+      "alt-down": [
+        "workspace::MoveItemToPaneInDirection",
+        { "direction": "down" }
+      ]
+    }
   }
 ]

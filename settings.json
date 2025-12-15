@@ -14,7 +14,7 @@
   "terminal": {
     "font_family": ".ZedMono"
   },
-  "icon_theme": "Colored Zed Icons Theme Dark",
+  "icon_theme": "VSCode Icons for Zed (Dark Angular)",
   "autosave": {
     "after_delay": {
       "milliseconds": 1000
@@ -36,6 +36,10 @@
   },
   "soft_wrap": "editor_width",
   "agent": {
+    "inline_assistant_model": {
+      "provider": "copilot_chat",
+      "model": "grok-code-fast-1"
+    },
     "profiles": {
       "agent": {
         "name": "Agent",
@@ -63,7 +67,7 @@
     "model_parameters": [],
     "default_model": {
       "provider": "copilot_chat",
-      "model": "grok-code-fast-1"
+      "model": "gpt-5-mini"
     }
   },
   "vim_mode": true,
@@ -72,7 +76,7 @@
   "theme": {
     "mode": "system",
     "light": "One Light",
-    "dark": "Vue Dark"
+    "dark": "Catppuccin Macchiato"
   },
   "diagnostics": {
     "button": true,
