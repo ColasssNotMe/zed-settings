@@ -7,17 +7,35 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "window_decorations": "client",
+  "tabs": {
+    "file_icons": true,
+    "git_status": true
+  },
+  "title_bar": {
+    "show_menus": false,
+    "show_sign_in": true,
+    "show_onboarding_banner": true,
+    "show_project_items": true,
+    "show_branch_name": true,
+    "show_branch_icon": true
+  },
+  "toolbar": {
+    "code_actions": true,
+    "quick_actions": true,
+    "breadcrumbs": true
+  },
+  "buffer_font_family": "JetBrains Mono",
+  "preferred_line_length": 75,
+  "relative_line_numbers": "enabled",
   "show_edit_predictions": false,
   "terminal": {
-<<<<<<< HEAD
-    "font_family": "CaskaydiaCove Nerd Font",
-    "shell": { "program": "C:\\Program Files\\PowerShell\\7\\pwsh.exe" }
-=======
-    "font_family": "CaskaydiaCove Nerd Font"
-    // "shell": { "program": "C:\\Program Files\\PowerShell\\7\\pwsh.exe" }
->>>>>>> ada0ce15a2608554c73b7e98f3e9ae2a39c93728
+    "toolbar": {
+      "breadcrumbs": true
+    },
+    "font_family": ".ZedMono"
   },
-  "icon_theme": "Catppuccin Latte",
+  "icon_theme": "Colored Zed Icons Theme Dark",
   "autosave": {
     "after_delay": {
       "milliseconds": 1000
@@ -35,10 +53,21 @@
     "dock": "right"
   },
   "project_panel": {
+    "hide_hidden": false,
+    "hide_root": false,
+    "indent_guides": {
+      "show": "always"
+    },
+    "indent_size": 15.0,
+    "auto_fold_dirs": false,
     "dock": "right"
   },
   "soft_wrap": "editor_width",
   "agent": {
+    "inline_assistant_model": {
+      "provider": "copilot_chat",
+      "model": "gpt-5-mini"
+    },
     "profiles": {
       "agent": {
         "name": "Agent",
@@ -66,21 +95,16 @@
     "model_parameters": [],
     "default_model": {
       "provider": "copilot_chat",
-<<<<<<< HEAD
-      "model": "gpt-4o"
-=======
-      "model": "gpt-4.1"
->>>>>>> ada0ce15a2608554c73b7e98f3e9ae2a39c93728
-    },
-    "version": "2"
+      "model": "gemini-3.1-pro-preview"
+    }
   },
   "vim_mode": true,
   "ui_font_size": 16,
   "buffer_font_size": 16,
   "theme": {
-    "mode": "system",
-    "light": "One Light",
-    "dark": "Vue Dark"
+    "mode": "dark",
+    "light": "Kanagawa Lotus",
+    "dark": "Sublime Mariana"
   },
   "diagnostics": {
     "button": true,
@@ -91,7 +115,6 @@
       "padding": 4,
       "min_column": 0,
       "max_severity": null
-    },
-    "cargo": null
+    }
   }
 }

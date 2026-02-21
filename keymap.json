@@ -37,8 +37,8 @@
       "ctrl-8": ["workspace::ActivatePane", 7],
       "ctrl-}": ["workspace::ActivatePane", 7],
       "ctrl-9": ["workspace::ActivatePane", 8],
-      "ctrl-*": ["workspace::ActivatePane", 8]
-    }
+      "ctrl-*": ["workspace::ActivatePane", 8],
+    },
   },
 
   {
@@ -61,41 +61,42 @@
       "alt-@": ["pane::ActivateItem", 5],
       "alt-)": ["pane::ActivateItem", 6],
       "alt-}": ["pane::ActivateItem", 7],
-      "alt-*": ["pane::ActivateItem", 8]
-    }
+      "alt-*": ["pane::ActivateItem", 8],
+    },
+  },
+
+  {
+    "context": "vim_mode ==visual",
+    "bindings": {
+      "shift-s": "vim::PushAddSurrounds",
+      // "j k": ["workspace::SendKeystrokes", "escape"]
+    },
   },
 
   // nulled keybinds
   {
-    "context": "vim_mode ==visual",
-    "bindings": {
-      "shift-s": "vim::PushAddSurrounds"
-      // "j k": ["workspace::SendKeystrokes", "escape"]
-    }
-  },
-  {
     "context": "vim_mode == literal",
     "bindings": {
-      "ctrl-m": null
-    }
+      "ctrl-m": null,
+    },
   },
   {
     "context": "Editor || vim_mode==normal",
     "bindings": {
-      "ctrl-m": "editor::MoveToEnclosingBracket"
-    }
+      "ctrl-m": "editor::MoveToEnclosingBracket",
+    },
   },
   {
     "context": "Editor",
     "bindings": {
-      "ctrl-'": null
-    }
+      "ctrl-'": null,
+    },
   },
   {
     "context": "Workspace || Editor",
     "bindings": {
-      "ctrl-'": "pane::CloseOtherItems"
-    }
+      "ctrl-'": "pane::CloseOtherItems",
+    },
   },
   {
     "context": "Workspace || Editor",
@@ -103,21 +104,33 @@
       "alt-left": [
         "workspace::MoveItemToPaneInDirection",
         {
-          "direction": "left"
-        }
+          "direction": "left",
+        },
       ],
       "alt-right": [
         "workspace::MoveItemToPaneInDirection",
-        { "direction": "right" }
+        { "direction": "right" },
       ],
       "alt-up": [
         "workspace::MoveItemToPaneInDirection",
-        { "direction": "up" }
+        { "direction": "up" },
       ],
       "alt-down": [
         "workspace::MoveItemToPaneInDirection",
-        { "direction": "down" }
-      ]
+        { "direction": "down" },
+      ],
+    },
+  },
+  {
+    "context": "ProjectPanel",
+    "bindings": {
+      "ctrl-enter": "workspace::OpenInTerminal",
+    },
+  },
+  {
+    "context": "vim_mode==visual",
+    "bindings": {
+      "alt-s": "editor::WrapSelectionsInTag"
     }
   }
 ]
