@@ -50,7 +50,7 @@
       "enabled": true,
       "url": "https://stitch.googleapis.com/mcp",
       "headers": {
-        "X-Goog-Api-Key": "AQ.Ab8RN6LzFh1elK0b6n4FuFBLmQ9Bbe0uH3u1dDsxa8_r4jKWDQ",
+        "X-Goog-Api-Key": "YOUR_KEY_HERE",
       },
     },
   },
