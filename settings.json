@@ -7,10 +7,79 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "reduce_motion": "on",
+  "redact_private_values": false,
+  "language_models": {
+    "openai_compatible": {
+      "9router": {
+        "api_url": "http://localhost:20128/v1",
+        "available_models": [
+          {
+            "name": "premium_model",
+            "max_tokens": 200000,
+            "max_output_tokens": 32000,
+            "max_completion_tokens": 200000,
+            "capabilities": {
+              "tools": true,
+              "images": false,
+              "parallel_tool_calls": true,
+              "prompt_cache_key": false,
+              "chat_completions": true,
+              "interleaved_reasoning": false,
+              "max_tokens_parameter": false,
+            },
+          },
+        ],
+      },
+    },
+  },
+  "format_on_save": "on",
+  "agent_servers": {
+    "gemini": {
+      "type": "registry",
+    },
+    "github-copilot-cli": {
+      "default_config_options": {
+        "allow_all": "off",
+      },
+      "type": "registry",
+    },
+  },
+  "context_servers": {
+    "stitch": {
+      "enabled": true,
+      "url": "https://stitch.googleapis.com/mcp",
+      "headers": {
+        "X-Goog-Api-Key": "AQ.Ab8RN6LzFh1elK0b6n4FuFBLmQ9Bbe0uH3u1dDsxa8_r4jKWDQ",
+      },
+    },
+  },
+  "outline_panel": {
+    "dock": "left",
+  },
+  "collaboration_panel": {
+    "dock": "left",
+  },
+  "languages": {
+    "Java": {
+      "colorize_brackets": true,
+      "inlay_hints": {
+        "enabled": true,
+      },
+    },
+    "C++": {
+      "format_on_save": "on",
+      "formatter": {
+        "external": {
+          "command": "clang-format",
+          "arguments": ["--style=file", "--fallback-style=LLVM"],
+        },
+      },
+    },
+  },
   "prettier": {
     "allowed": true,
   },
-
   "file_types": {
     "HTML": ["svg"],
   },
@@ -21,12 +90,12 @@
     "git_status": true,
   },
   "title_bar": {
+    "show_branch_status_icon": true,
     "show_menus": false,
     "show_sign_in": true,
     "show_onboarding_banner": true,
     "show_project_items": true,
     "show_branch_name": true,
-    "show_branch_icon": true,
   },
   "toolbar": {
     "code_actions": true,
@@ -43,13 +112,26 @@
     },
     "font_family": ".ZedMono",
   },
-  "icon_theme": "Colored Zed Icons Theme Dark",
+  "icon_theme": {
+    "mode": "light",
+    "light": "Colored Zed Icons Theme Dark",
+    "dark": "Colored Zed Icons Theme Dark",
+  },
   "autosave": {
     "after_delay": {
       "milliseconds": 1000,
     },
   },
   "edit_predictions": {
+    "open_ai_compatible_api": {
+      "max_output_tokens": 60,
+      "model": "deepseek:v4@flash",
+      "api_url": "https://api.runware.ai/v1",
+    },
+    "codestral": {
+      "api_url": "https://codestral.mistral.ai",
+    },
+    "provider": "copilot",
     "mode": "subtle",
     "copilot": {
       "proxy": null,
@@ -58,7 +140,7 @@
     "enabled_in_text_threads": false,
   },
   "git_panel": {
-    "dock": "right",
+    "dock": "left",
   },
   "project_panel": {
     "hide_hidden": false,
@@ -72,20 +154,24 @@
   },
   "soft_wrap": "editor_width",
   "agent": {
+    "sandbox_permissions": {
+      "network_hosts": ["capgo.dev"],
+    },
     "tool_permissions": {
       "default": "allow",
     },
     "inline_assistant_model": {
       "provider": "copilot_chat",
-      "model": "claude-sonnet-4.6",
+      "model": "gpt-5.3-codex",
     },
     "profiles": {
       "agent": {
         "name": "Agent",
         "tools": {
+          "skill": true,
           "fetch": true,
           "thinking": true,
-          "terminal": false,
+          "terminal": true,
           "read_file": true,
           "open": true,
           "now": true,
@@ -104,8 +190,9 @@
     "dock": "right",
     "model_parameters": [],
     "default_model": {
-      "provider": "copilot_chat",
-      "model": "claude-sonnet-4.6",
+      "enable_thinking": false,
+      "provider": "9router",
+      "model": "premium_model",
     },
   },
   "vim_mode": true,
@@ -114,7 +201,7 @@
   "theme": {
     "mode": "dark",
     "light": "Kanagawa Lotus",
-    "dark": "Sublime Mariana",
+    "dark": "0x96f Theme",
   },
   "diagnostics": {
     "button": true,

@@ -9,6 +9,7 @@
   {
     "context": "Workspace",
     "bindings": {
+      
       // "shift shift": "file_finder::Toggle"
       "alt-b": "workspace::ToggleRightDock",
       "ctrl-shift-b": "project_panel::ToggleFocus",
@@ -132,5 +133,12 @@
     "bindings": {
       "alt-s": "editor::WrapSelectionsInTag"
     }
+  },
+  {
+    "context": "VimControl && !menu",
+    "bindings": {
+      "space": null
+    }
   }
 ]
+
